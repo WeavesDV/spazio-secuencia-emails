@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Formación Anual · Secuencia de mensajes · Spazio Bodywork</title>
+<style>
+  @font-face{font-family:'Nyght Serif';font-style:normal;font-weight:400;font-display:swap;src:url('https://spaziobodywork.com/wp-content/uploads/2024/08/NyghtSerif-Regular.ttf') format('truetype');}
+  @font-face{font-family:'Nyght Serif';font-style:italic;font-weight:400;font-display:swap;src:url('https://spaziobodywork.com/wp-content/uploads/2024/08/NyghtSerif-RegularItalic.ttf') format('truetype');}
+  @font-face{font-family:'Nyght Serif';font-style:normal;font-weight:500;font-display:swap;src:url('https://spaziobodywork.com/wp-content/uploads/2024/08/NyghtSerif-Medium.ttf') format('truetype');}
+  @font-face{font-family:'Nourd';font-style:normal;font-weight:300;font-display:swap;src:url('https://spaziobodywork.com/wp-content/uploads/2024/08/nourd_light.ttf') format('truetype');}
+  @font-face{font-family:'Nourd';font-style:normal;font-weight:400;font-display:swap;src:url('https://spaziobodywork.com/wp-content/uploads/2024/08/nourd_regular.ttf') format('truetype');}
+  @font-face{font-family:'Nourd';font-style:normal;font-weight:500;font-display:swap;src:url('https://spaziobodywork.com/wp-content/uploads/2024/08/nourd_medium.ttf') format('truetype');}
+  @font-face{font-family:'Nourd';font-style:normal;font-weight:600;font-display:swap;src:url('https://spaziobodywork.com/wp-content/uploads/2024/08/nourd_semi_bold.ttf') format('truetype');}
+  :root{
+    --paper:#F3E8EB; --white:#FFFFFF; --plum:#433E49; --accent:#35243E;
+    --mauve:#928490; --mauve-d:#7E7180; --line:#DFCBD3; --muted:#6B6170;
+    --serif:'Nyght Serif', Georgia, serif; --sans:'Nourd','Helvetica Neue',Arial,sans-serif;
+    --pad:clamp(20px,4vw,56px);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--plum);font-family:var(--sans);font-size:16px;line-height:1.55;}
+  .wrap{max-width:1080px;margin:0 auto;padding:var(--pad);}
+  header.top{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:36px;}
+  .eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mauve);margin:0 0 12px;}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.4vw,2.9rem);line-height:1.12;margin:0 0 14px;letter-spacing:-.01em;}
+  h1 em{font-style:italic}
+  .lead{margin:0;max-width:62ch;color:var(--muted);font-size:1.02rem;}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:18px;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mauve-d);}
+  .meta b{color:var(--plum);font-weight:600;}
+
+  .flow{position:relative;margin:0;padding:0 0 0 34px;list-style:none;}
+  .flow::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:1px;background:var(--line);}
+  .step{position:relative;margin:0 0 26px;}
+  .step::before{content:counters(step, ".") ;counter-increment:step;position:absolute;left:-34px;top:0;width:23px;height:23px;border-radius:50%;
+    background:var(--plum);color:#fff;font-size:.72rem;display:flex;align-items:center;justify-content:center;font-weight:600;}
+  .flow{counter-reset:step;}
+  .cond{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 8px;}
+  .cond span{display:inline-block;background:#E9DDE1;color:var(--accent);border-radius:999px;padding:3px 10px;letter-spacing:.12em;}
+  .card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:10px;overflow:hidden;}
+  .inbox{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid #EFE7EA;background:#FBF8F9;font-size:.86rem;}
+  .inbox .lbl{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mauve);}
+  .inbox .subj{font-weight:600;}
+  .mail{padding:18px 18px 20px;}
+  .mail .brandline{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mauve);margin:0 0 10px;}
+  .mail p{margin:0 0 10px;font-size:.94rem;}
+  .mail p:last-child{margin-bottom:0;}
+  .mail .btn{display:inline-block;background:var(--plum);color:#fff;border-radius:6px;padding:9px 18px;font-size:.82rem;font-weight:600;margin:4px 0 10px;}
+  .mail .btn.ghost{background:transparent;color:var(--plum);border:1px solid var(--plum);}
+  .mail ul{margin:0 0 10px;padding-left:20px;font-size:.92rem;}
+  .mail .table{width:100%;border-collapse:collapse;margin:6px 0 12px;font-size:.88rem;}
+  .mail .table td{padding:6px 0;border-bottom:1px solid #EFE7EA;}
+  .mail .table tr:last-child td{border-bottom:0;}
+  .muted{color:#5A5060;font-size:.9rem;}
+  .flow .step--alt::before{background:var(--white);color:var(--plum);border:1px dashed var(--mauve);}
+  .step--alt .card{border-top-style:dashed;}
+  .step--alt .cond{color:var(--mauve-d);}
+  .note{margin:10px 0 0;padding:10px 14px;background:#F7F1F3;border-left:2px solid var(--mauve);font-size:.82rem;color:var(--mauve-d);}
+
+  .money{margin:40px 0 0;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;}
+  .money h2{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin:0 0 6px;}
+  .money p{margin:0 0 10px;font-size:.94rem;}
+  .money .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0 4px;}
+  .money .box{background:#F7F1F3;border-radius:8px;padding:14px 16px;}
+  .money .box small{display:block;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mauve);margin-bottom:6px;}
+  .money .box strong{font-family:var(--serif);font-weight:500;font-size:1.5rem;}
+  .money .box span{display:block;font-size:.8rem;color:var(--muted);margin-top:4px;}
+  .money .total{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.92rem;}
+  footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:.76rem;color:var(--mauve);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .eq{width:100%;border-collapse:collapse;margin:16px 0 10px;font-size:.94rem}
+  .eq td{padding:8px 0;border-bottom:1px solid #EFE7EA}
+  .eq td:last-child{text-align:right;font-weight:600;white-space:nowrap}
+  .eq tr.sum td{border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--serif);font-size:1.06rem}
+  @media (max-width:720px){
+    .money .grid{grid-template-columns:1fr;}
+    .flow{padding-left:28px}
+    .step::before{left:-28px}
+  }
+  @media print{
+    @page{size:A4;margin:12mm 12mm 14mm}
+    body{background:#fff;font-size:10.5px;line-height:1.45}
+    .wrap{max-width:none;padding:0}
+    h1{font-size:1.7rem}
+    .lead{font-size:.95rem}
+    .mail p{font-size:.92rem}
+    .mail .table{font-size:.86rem}
+    .step{margin-bottom:14px}
+    .note{font-size:.78rem}
+    .card,.money{break-inside:avoid;box-shadow:none}
+    .step{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <p class="eyebrow">Spazio Bodywork · Formación Anual</p>
+    <h1>Qué mensajes recibe el alumno, <em>y cuándo</em></h1>
+    <p class="lead">Esta es la secuencia completa de correos automáticos de la Formación Anual, con el asunto y el texto real de cada uno. Todo lo demás no se envía: no hay más recordatorios ni más avisos.</p>
+    <div class="meta">
+      <span>Convocatoria <b>Barcelona · 20-21 de febrero de 2027</b></span>
+      <span>Inscripción <b>500 € con tarjeta</b></span>
+      <span>Actualizado <b>24 de noviembre de 2026</b></span>
+    </div>
+  </header>
+
+  <ol class="flow">
+
+    <!-- 1 -->
+    <li class="step">
+      <p class="cond">Deja sus datos y pulsa «Quiero reservar»</p>
+      <div class="card">
+        <div class="inbox"><span class="lbl">Asunto</span><span class="subj">Formación Anual en Barcelona: información y reserva</span></div>
+        <div class="mail">
+          <p class="brandline">Spazio Bodywork</p>
+          <p>Hola, <em>nombre</em>:</p>
+          <p>¡Encantada de saludarte!</p>
+          <p>La próxima <b>Formación Anual en Barcelona</b> comenzará los días <b>20 y 21 de febrero de 2027</b>.</p>
+          <span class="btn ghost">Ver dossier completo de la formación</span>
+          <p class="muted">📚 Duración: 10 módulos mensuales, 160 horas · 👤 Imparte: Sujati · 📍 Lugar: Spazio Bodywork, C/ Viladomat, 152, 2.ª planta, Barcelona.</p>
+          <table class="table">
+            <tr><td><b>Módulo 1</b></td><td>20 y 21 de febrero de 2027</td></tr>
+            <tr><td><b>Módulo 2</b></td><td>20 y 21 de marzo de 2027</td></tr>
+            <tr><td><b>Módulo 3</b></td><td>24 y 25 de abril de 2027</td></tr>
+            <tr><td><b>Módulo 4</b></td><td>22 y 23 de mayo de 2027</td></tr>
+            <tr><td><b>Módulo 5</b></td><td>19 y 20 de junio de 2027</td></tr>
+            <tr><td><b>Módulo 6</b></td><td>3 y 4 de julio de 2027</td></tr>
+            <tr><td><b>Módulo 7</b></td><td>18 y 19 de septiembre de 2027</td></tr>
+            <tr><td><b>Módulo 8</b></td><td>16 y 17 de octubre de 2027</td></tr>
+            <tr><td><b>Módulo 9</b></td><td>13 y 14 de noviembre de 2027</td></tr>
+            <tr><td><b>Módulo 10</b></td><td>11 y 12 de diciembre de 2027</td></tr>
+          </table>
+          <table class="table">
+            <tr><td><b>Matrícula</b></td><td><b>500 €</b></td></tr>
+            <tr><td><b>Pago completo por adelantado</b></td><td><b>2.250 €</b></td></tr>
+            <tr><td><b>Pago por módulo</b></td><td><b>250 €</b></td></tr>
+          </table>
+          <p><b>Confirma tu plaza.</b> La reserva se paga con tarjeta: <b>500 € de matrícula</b>. En cuanto se reciba el pago, tu plaza queda confirmada y te llegará el correo de confirmación.</p>
+          <span class="btn">Pagar mi reserva</span>
+          <p class="muted">Si tienes cualquier duda, estaremos encantadas de ayudarte: info@spaziobodywork.com · WhatsApp.</p>
+          <p>Un saludo,<br><b>Sujati</b><br>Spazio Bodywork®</p>
+        </div>
+      </div>
+      <p class="note">Llega en segundos, antes de pagar. El botón «Pagar mi reserva» lleva al pago seguro con tarjeta.</p>
+    </li>
+
+    <!-- 2 -->
+    <li class="step">
+      <p class="cond">Si paga: 500 € con tarjeta</p>
+      <div class="card">
+        <div class="inbox"><span class="lbl">Asunto</span><span class="subj">Tu plaza en Barcelona está confirmada</span></div>
+        <div class="mail">
+          <p class="brandline">Spazio Bodywork</p>
+          <p>Hola, <em>nombre</em>:</p>
+          <p>¡Gracias! Hemos recibido correctamente tu pago y tu plaza para la <b>Formación Anual</b> en <b>Barcelona</b> ya está confirmada.</p>
+          <p class="muted"><b>Fechas:</b> 20 y 21 de febrero de 2027 · <b>Horario:</b> 10:00–19:30 h<br><b>Lugar:</b> Spazio Bodywork, C/ Viladomat, 152, 2.ª planta, Barcelona · <b>Imparte:</b> Sujati</p>
+          <p><b>Precio de la formación:</b> 2.250 € por adelantado o 250 € por módulo<br><b>Importe abonado:</b> 500 €</p>
+          <p>Tu inscripción queda confirmada para la Formación Anual de Spazio Bodywork®.</p>
+          <p>Te recomendamos guardar este email: contiene la información principal de tu formación y de tu reserva.</p>
+          <p>Un saludo,<br><b>Sujati</b><br>Spazio Bodywork®</p>
+        </div>
+      </div>
+      <p class="note">Junto a este llega el correo de pedido de la tienda («Tu pedido está en proceso»). Son dos, no es un error.</p>
+    </li>
+
+    <!-- 3 -->
+    <li class="step step--alt">
+      <p class="cond">Si no paga en 24 horas</p>
+      <div class="card">
+        <div class="inbox"><span class="lbl">Asunto</span><span class="subj">Tu plaza en la Formación Anual sigue disponible</span></div>
+        <div class="mail">
+          <p class="brandline">Spazio Bodywork</p>
+          <p>Hola, <em>nombre</em>:</p>
+          <p>Reservaste tu plaza para la <b>Formación Anual</b> en Barcelona (20 y 21 de febrero de 2027) y todavía no hemos recibido el pago de la matrícula.</p>
+          <p><b>Matrícula: 500 €.</b></p>
+          <p>Para dejar tu plaza confirmada solo falta el pago con tarjeta:</p>
+          <span class="btn">Pagar mi reserva</span>
+          <p>La pre-reserva no guarda la plaza por sí sola: queda confirmada cuando se recibe el pago, y en ese momento te llega el correo de confirmación.</p>
+          <p class="muted">Si ya lo has pagado, ignora este mensaje: puede que los correos se hayan cruzado.</p>
+          <p>Un saludo,<br><b>Sujati</b><br>Spazio Bodywork®</p>
+        </div>
+      </div>
+      <p class="note">Sale una sola vez. A quien ya pagó, canceló o envió comprobante no le llega.</p>
+    </li>
+
+    <!-- 4 -->
+    <li class="step">
+      <p class="cond">Un día antes del inicio <small>(solo plazas pagadas)</small></p>
+      <div class="card">
+        <div class="inbox"><span class="lbl">Asunto</span><span class="subj">Mañana nos vemos en Barcelona</span></div>
+        <div class="mail">
+          <p class="brandline">Spazio Bodywork</p>
+          <p>Hola, <em>nombre</em>:</p>
+          <p>Queremos recordarte que tu plaza para la Formación Anual está confirmada y que se acerca el próximo encuentro.</p>
+          <p class="muted"><b>Fecha:</b> 20 y 21 de febrero de 2027 · <b>Horario:</b> 10:00–19:30 h · <b>Imparte:</b> Sujati · <b>Lugar:</b> Spazio Bodywork, C/ Viladomat, 152<br><b>N.º de reserva:</b> #0000</p>
+          <p><b>Material necesario:</b></p>
+          <ul>
+            <li>Ropa cómoda, preferiblemente camiseta de manga corta.</li>
+            <li>2 sábanas para cama de 80 o 90 cm, que no sean bajeras.</li>
+            <li>2 toallas medianas.</li>
+            <li>Calcetines antideslizantes.</li>
+            <li>Libreta y bolígrafo.</li>
+          </ul>
+          <p>Te pedimos que llegues 15 minutos antes del inicio para recibirte con calma.</p>
+          <p>Un saludo,<br><b>Sujati</b><br>Spazio Bodywork®</p>
+        </div>
+      </div>
+    </li>
+
+    <!-- 5 -->
+    <li class="step">
+      <p class="cond">Un día después de terminar <small>(solo plazas pagadas)</small></p>
+      <div class="card">
+        <div class="inbox"><span class="lbl">Asunto</span><span class="subj">¿Qué te pareció el encuentro en Barcelona?</span></div>
+        <div class="mail">
+          <p class="brandline">Spazio Bodywork</p>
+          <p>Hola, <em>nombre</em>:</p>
+          <p>Gracias por haber formado parte de la Formación Anual en Barcelona. Esperamos que esta experiencia te haya aportado nuevas herramientas, aprendizajes y una mirada más profunda sobre el trabajo corporal.</p>
+          <p>Tu opinión es muy importante para nosotros y también puede ayudar a otras personas que estén valorando hacer la formación. Si te apetece, puedes dejarnos una reseña en Google:</p>
+          <span class="btn ghost">Dejar una reseña en Google</span>
+          <p>Un saludo,<br><b>Sujati</b><br>Spazio Bodywork®</p>
+        </div>
+      </div>
+    </li>
+
+    <!-- 6 -->
+    <li class="step step--alt">
+      <p class="cond">Si se cancela la reserva</p>
+      <div class="card">
+        <div class="inbox"><span class="lbl">Asunto</span><span class="subj">Tu reserva para Barcelona ha sido cancelada</span></div>
+        <div class="mail">
+          <p class="brandline">Spazio Bodywork</p>
+          <p>Hola, <em>nombre</em>:</p>
+          <p>Te confirmamos que tu inscripción para la Formación Anual en Barcelona ha sido cancelada.</p>
+          <p>Si crees que se trata de un error o quieres consultar otras fechas, próximas ediciones o posibilidades para realizar la formación, puedes escribirnos y estaremos encantadas de orientarte.</p>
+          <p>Un saludo,<br><b>Sujati</b><br>Spazio Bodywork®</p>
+        </div>
+      </div>
+    </li>
+
+  </ol>
+
+  <section class="money">
+    <h2>Cómo se paga</h2>
+    <p>La matrícula de 500 € <b>no es un coste extra</b>: es el adelanto de los dos últimos módulos. Se paga al reservar y queda descontada del total.</p>
+    <div class="grid">
+      <div class="box"><small>Al reservar</small><strong>500 €</strong><span>Matrícula. Cubre los módulos 9 y 10.</span></div>
+      <div class="box"><small>Módulos 1 a 8</small><strong>250 €</strong><span>Cada uno, antes de cada fin de semana.</span></div>
+      <div class="box"><small>Todo por adelantado</small><strong>2.250 €</strong><span>Precio total con el 10 % aplicado.</span></div>
+    </div>
+    <table class="eq">
+      <tr><td>Matrícula al reservar</td><td>500 €</td></tr>
+      <tr><td>Ocho módulos de 250 €</td><td>2.000 €</td></tr>
+      <tr class="sum"><td>Total módulo a módulo</td><td>2.500 €</td></tr>
+      <tr><td>Pagando todo por adelantado (10 % menos)</td><td>2.250 €</td></tr>
+    </table>
+    <p class="total">La matrícula <b>nunca se suma aparte</b>: es el pago anticipado de los dos últimos módulos. Por eso el total no sube de 2.500 €.</p>
+  </section>
+
+  <footer>
+    <span>Spazio Bodywork® · Formación Anual · Barcelona 2027</span>
+    <span>Documento interno de revisión · Weaves</span>
+  </footer>
+
+</div>
+</body>
+</html>
